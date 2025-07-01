@@ -1,18 +1,17 @@
-// package.json
 {
   "name": "work-experience",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "engines": { // This is the correct 'engines' block
-    "node": ">=18.0.0" // This tells Vercel to use Node.js version 18 or higher
+  "engines": {
+    "node": ">=18.0.0"
   },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "postinstall": "chmod +x ./node_modules/.bin/tsc && chmod +x ./node_modules/.bin/vite" // ADD THIS LINE
+    "postinstall": "chmod +x ./node_modules/.bin/tsc && chmod +x ./node_modules/.bin/vite"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
